@@ -20,8 +20,8 @@ class HomeController extends GetxController {
       update();
     });
     Utils.roomId = await Utils.signaling.createRoom(Utils.remoteRenderer, Utils.getRandomId().toString());
-    // Get.to(const CallScreen());
-    Get.to(const VoiceCallScreen());
+    Get.to(const CallScreen());
+    // Get.to(const VoiceCallScreen());
   }
 
   void joinRoom() async {
@@ -35,7 +35,7 @@ class HomeController extends GetxController {
       Utils.remoteRenderer,
     );
     Utils.roomId = roomCtrl.text.trim();
-    // Get.to(const CallScreen());
-    Get.to(const VoiceCallScreen());
+     Get.to(const CallScreen());
+    // Get.to(const VoiceCallScreen());
   }
 }

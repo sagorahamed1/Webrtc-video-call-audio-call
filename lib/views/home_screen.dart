@@ -85,6 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   controller: homeController.roomCtrl,
                   maxLength: homeController.roomIdLength.value,
                   textAlign: TextAlign.center,
+                  keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8),
